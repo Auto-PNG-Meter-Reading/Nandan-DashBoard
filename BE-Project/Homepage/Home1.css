@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navigation {
+    background-color: #333333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.navigation a:hover {
+    border-bottom: 2px solid #007BFF;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Add this CSS code to your existing style block */
+
+.comparison {
+    /* background-color: #953333; */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.comparison h3 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.comparison p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.comparison ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.comparison li {
+    margin: 10px 0;
+}
+
+.comparison li::before {
+    content: "\2022";
+    /* Use a bullet point for list items */
+    color: #007BFF;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Add this CSS code to your existing style block */
+
+.how-it-works {
+    /* background-color: #fff; */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.how-it-works h3 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.how-it-works p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.how-it-works ol {
+    list-style-type: decimal;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.how-it-works li {
+    margin: 10px 0;
+}
+
+/* Add this CSS code to your existing style block */
+
+.features {
+    /* background-color: #f3f3f3; */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.features h3 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.features ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.features li {
+    margin: 10px 0;
+}
+
+/* Add this CSS code to your existing style block */
+
+.customer-support {
+    /* background-color: #f3f3f3; */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.customer-support h3 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.customer-support p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.contact-button {
+    margin-top: 20px;
+}
+
+/*Contact Form Information*/
+.contact-us {
+    /* background-color: #fff; */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-us h3 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.contact-us p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.social-icons {
+    /* border: 2px solid; */
+    margin: 20px ;
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons i {
+    font-size: 25px;
+}
+
+/* .gallery {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.gallery h3 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.slider-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-button {
+    margin-top: 10px;
+} */
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0px;
+}
