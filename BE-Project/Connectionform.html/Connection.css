@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: linear-gradient(to right, #99004d 0%, #ff00fb 100%)
+  background: linear-gradient(to right,  #87CEEB 0%, #87CEFA 100%)
 }
 .container {
   position: relative;
@@ -106,10 +106,10 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  background:linear-gradient(to right, #99004d 0%, #ff00fb 100%)
+  background:linear-gradient(to right,  #027270 0%, #23d3d9 100%)
 }
 .form button:hover {
-  background: linear-gradient(to left, #99004d 0%, #ff00fb 100%)
+  background:linear-gradient(to left,  #027270 0%, #23d3d9 100%)
 }
 /*Responsive*/
 @media screen and (max-width: 500px) {

@@ -10,7 +10,7 @@ html, body{
   height: 100vh;
   width: 100%;
   place-items: center;
-  background: linear-gradient(to right, #960194 0%, #ff00fb 100%);
+  background: linear-gradient(to right, #87CEEB 0%, #87CEFA 100%);
 }
 ::selection{
   background: #ff80bf;
@@ -38,7 +38,7 @@ html, body{
   left: 0px;
   bottom: 3px;
   border-radius: 5px;
-  background: linear-gradient(to right,  #960194 0%, #ff00fb 100%);
+  background: linear-gradient(to right,  #4682B4 0%, #ADD8E6 100%);
 }
 .container form .input-box{
   width: 100%;
@@ -67,7 +67,7 @@ html, body{
   position: absolute;
   height: 2px;
   width: 100%;
-  background: linear-gradient(to right, #99004d 0%, #ff00fb 100%);
+  background: linear-gradient(to right, #027270 0%, #23d3d9 100%);
   left: 0;
   bottom: 0;
   transform: scaleX(0);
@@ -83,7 +83,7 @@ html, body{
   margin: 40px 0 20px 0;
 }
 .container .input-box input[type="submit"]{
-  background: linear-gradient(to right, #99004d 0%, #ff00fb 100%);
+  background: linear-gradient(to right, #027270 0%, #23d3d9 100%);
   font-size: 17px;
   color: #fff;
   border-radius: 5px;
@@ -92,7 +92,7 @@ html, body{
 }
 .container .input-box input[type="submit"]:hover{
   letter-spacing: 1px;
-  background: linear-gradient(to left, #99004d 0%, #ff00fb 100%);
+  background: linear-gradient(to left, #027270 0%, #23d3d9 100%);
 }
 /* .container .option{
   font-size: 14px;

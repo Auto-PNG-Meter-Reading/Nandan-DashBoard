@@ -2,7 +2,7 @@
 $servername = "localhost"; // Server name
 $username = "root";        // MySQL username
 $password = "";            // MySQL password
-$database = "test1"; // Replace with your actual database name
+$database = "test1";       // Replace with your actual database name
 
 // Create a connection
 $conn = new mysqli($servername, $username, $password, $database);
@@ -15,11 +15,11 @@ if ($conn->connect_error) {
 // Sample data to insert
 $name = "John Doe";
 $email = "johndoe@example.com";
-$pass="1234";
-$rpass="1234"
+$pass = "1234";
+$rpass = "1234"; // Fix: Use $rpass, not 'rpass'
 
 // SQL query to insert data into the table
-$sql = "INSERT INTO stud (name, email,pass,rpass) VALUES ('$name', '$email','$pass','rpass')";
+$sql = "INSERT INTO stud (name, email, pass, rpass) VALUES ('$name', '$email', '$pass', '$rpass')"; // Fix: Use $pass and $rpass variables
 
 if ($conn->query($sql) === TRUE) {
     echo "Data inserted successfully";
