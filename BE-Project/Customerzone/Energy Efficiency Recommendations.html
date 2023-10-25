@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add your head content here -->
+    <style>
+        /* Add your CSS styles here */
+
+        .efficiency-recommendations {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative; /* Position relative for animation */
+            overflow: hidden; /* Hide overflow for animation */
+        }
+
+        .efficiency-recommendations h2 {
+            font-size: 24px;
+            color: #007BFF; /* Primary color for headings */
+        }
+
+        .efficiency-recommendations p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .recommendation-list {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            display: block;
+        }
+
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .submit-button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* CSS animation for the background */
+        .efficiency-recommendations::before {
+            content: "";
+            position: absolute;
+            z-index: -5;
+            width: 120%;
+            height: 120%;
+            background: linear-gradient(45deg, #FFFFFF, #F0F0F0); /* Light-colored gradient animation */
+            top: -10%;
+            left: -10%;
+            animation: animateBackground 5s linear infinite;
+            /* transition: 1s; */
+        }
+
+        @keyframes animateBackground {
+            0% {
+                left: -10%;
+            }
+            100% {
+                left: 110%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Add your existing header and content here -->
+
+    <div class="container">
+        <div class="efficiency-recommendations">
+            <h2>Energy Efficiency Recommendations</h2>
+            <p>Discover ways to improve energy efficiency and reduce your gas consumption with our expert recommendations:</p>
+            <ul class="recommendation-list">
+                <li>Upgrade to energy-efficient appliances.</li>
+                <li>Ensure proper insulation in your home.</li>
+                <li>Regularly maintain gas appliances.</li>
+                <li>Set thermostats to optimal temperatures.</li>
+                <li>Seal gaps and cracks in your home's structure.</li>
+                <li>Install a programmable thermostat to optimize heating and cooling.</li>
+                <li>Replace or clean air filters regularly for HVAC systems.</li>
+                <li>Use natural light and LED bulbs to reduce electricity consumption.</li>
+            </ul>
+            <p>Have questions or need personalized advice? Feel free to reach out to us.</p>
+            <form action="contact_support.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <button type="submit" class="submit-button">Contact Us</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add your existing footer here -->
+</body>
+</html>

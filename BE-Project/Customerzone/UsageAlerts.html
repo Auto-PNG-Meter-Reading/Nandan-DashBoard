@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add your head content here -->
+    <style>
+        /* Add your CSS styles here */
+
+        .usage-alerts {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .usage-alerts h2 {
+            font-size: 24px;
+            color: #007BFF;
+        }
+
+        .usage-alerts p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            display: block;
+        }
+
+        .form-group input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .submit-button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Add your existing header and content here -->
+
+    <div class="container">
+        <div class="usage-alerts">
+            <h2>Usage Alerts</h2>
+            <p>Set usage thresholds to receive alerts when you exceed your defined limits. This helps you manage your consumption efficiently.</p>
+            <form action="process_alerts.php" method="post">
+                <div class="form-group">
+                    <label for="usage-limit">Usage Limit:</label>
+                    <input type="number" id="usage-limit" name="usage-limit" required>
+                </div>
+                <div class="form-group">
+                    <label for="notification-method">Notification Method:</label>
+                    <select id="notification-method" name="notification-method">
+                        <option value="email">Email</option>
+                        <option value="sms">SMS</option>
+                        <!-- Add more notification options as needed -->
+                    </select>
+                </div>
+                <button type="submit" class="submit-button">Set Alert</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add your existing footer here -->
+</body>
+</html>

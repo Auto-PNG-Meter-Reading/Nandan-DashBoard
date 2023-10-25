@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated PNG Gas Meter Reading</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .navigation {
+            background-color: #333333;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        .navigation a:hover {
+            border-bottom: 2px solid #007BFF;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .btn-primary {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Add this CSS code to your existing style block */
+
+        .comparison {
+            /* background-color: #953333; */
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .comparison h3 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .comparison p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .comparison ul {
+            list-style-type: disc;
+            text-align: left;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+
+        .comparison li {
+            margin: 10px 0;
+        }
+
+        .comparison li::before {
+            content: "\2022";
+            /* Use a bullet point for list items */
+            color: #007BFF;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Add this CSS code to your existing style block */
+
+        .how-it-works {
+            /* background-color: #fff; */
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .how-it-works h3 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .how-it-works p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .how-it-works ol {
+            list-style-type: decimal;
+            text-align: left;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+
+        .how-it-works li {
+            margin: 10px 0;
+        }
+
+        /* Add this CSS code to your existing style block */
+
+        .features {
+            /* background-color: #f3f3f3; */
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .features h3 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .features ul {
+            list-style-type: disc;
+            text-align: left;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+
+        .features li {
+            margin: 10px 0;
+        }
+
+        /* Add this CSS code to your existing style block */
+
+        .customer-support {
+            /* background-color: #f3f3f3; */
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .customer-support h3 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .customer-support p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .contact-button {
+            margin-top: 20px;
+        }
+
+        /*Contact Form Information*/
+        .contact-us {
+            /* background-color: #fff; */
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .contact-us h3 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .contact-us p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .social-icons {
+            /* border: 2px solid; */
+            margin: 20px ;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .social-icons i {
+            font-size: 25px;
+        }
+
+        /* .gallery {
+            background-color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .gallery h3 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .slider-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .slider {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .slide {
+            min-width: 100%;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        .slider-button {
+            margin-top: 10px;
+        } */
+
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer p {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Automated PNG Gas Meter Reading</h1>
+    </header>
+
+    <div class="container">
+        <div class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
+        </div>
+
+        <div class="hero">
+            <h2>Welcome to Automated PNG Gas Meter Reading</h2>
+            <p>Effortless and accurate gas meter reading made simple. Our automated system eliminates the hassle of
+                manual readings and provides real-time data.</p>
+            <p>Get started today to experience the future of gas meter reading.</p>
+            <a class="btn-primary" href="#">Get Started</a>
+        </div>
+
+
+        <div class="comparison">
+            <h3>Why Choose Piped Natural Gas (PNG) Over Normal Gas?</h3>
+            <p>When it comes to your energy needs, making the right choice matters. Here's why PNG is a better option:
+            </p>
+            <ul>
+                <li>1. Environmental Friendliness: PNG is a cleaner and more environmentally friendly source of energy
+                    compared to normal gas.</li>
+                <li>2. Cost-Efficiency: PNG is cost-effective in the long run as it doesn't require heavy cylinder
+                    refills or storage.</li>
+                <li>3. Convenience: With PNG, there's no need to worry about cylinder deliveries or running out of gas.
+                </li>
+                <li>4. Safety: PNG is delivered through a secure pipeline system, reducing the risks associated with gas
+                    cylinders.</li>
+                <li>5. Continuous Supply: Enjoy uninterrupted gas supply 24/7, eliminating the need for manual
+                    monitoring.</li>
+            </ul>
+        </div>
+
+        <div class="how-it-works">
+            <h3>How It Works</h3>
+            <p>Discover how our automated PNG gas meter reading system simplifies your life:</p>
+            <ol>
+                <li>Installation: Our expert team installs the automated meter reading device at your location.</li>
+                <li>Data Collection: The device collects real-time gas consumption data and transmits it securely.</li>
+                <li>Access Data: Access your consumption data via our user-friendly online platform or mobile app.</li>
+                <li>Monitor Usage: Keep track of your gas usage and receive alerts or reports as needed.</li>
+            </ol>
+        </div>
+
+        <div class="features">
+            <h3>Key Features</h3>
+            <ul>
+                <li>Real-time Gas Consumption Monitoring</li>
+                <li>Automated Reading and Data Collection</li>
+                <li>Accurate Billing and Usage Reporting</li>
+                <li>Secure and Reliable Data Transmission</li>
+                <li>User-Friendly Web Platform and Mobile App</li>
+                <li>24/7 Customer Support</li>
+            </ul>
+        </div>
+
+        <div class="customer-support">
+            <h3>Customer Support</h3>
+            <p>We are here to assist you with any questions or issues. Our dedicated customer support team is ready to
+                help.</p>
+            <a class="btn-primary contact-button" href="Customer Support/CustomerSupportForm.html" target="_blank">Contact Support</a>
+        </div>
+        <!-- <div class="gallery">
+            <h3>Image Gallery</h3>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide"><img src="image1.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="image2.jpg" alt="Image 2"></div>
+                    <div class="slide"><img src="image3.jpg" alt="Image 3"></div>
+                </div>
+            </div>
+            <div class="slider-button">
+                <button id="prev">Previous</button>
+                <button id="next">Next</button>
+            </div>
+        </div> -->
+
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <p>Stay updated with the latest news and updates. Connect with us through our social media channels:</p>
+            <div class="social-icons">
+                <a href="#" class="icon-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="icon-link"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="icon-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="icon-link"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="icon-link"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Automated PNG Gas Meter Reading</p>
+    </div>
+    <script>
+        // JavaScript for the image slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+
+        function showSlide(n) {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].style.display = 'block';
+        }
+
+        prevButton.addEventListener('click', () => showSlide(currentSlide - 1));
+        nextButton.addEventListener('click', () => showSlide(currentSlide + 1));
+
+        showSlide(currentSlide);
+
+    </script>
+</body>
+
+</html>
